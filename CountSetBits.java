@@ -1,5 +1,5 @@
 public class CountSetBits{
-	static int countSetBits(int n){
+	static int countSetBits(int n){	//Brian Kernighan’s Algorithm:  http://www.geeksforgeeks.org/count-set-bits-in-an-integer/
 		int count=0;
 		while(n>0){
 			n = n&(n-1);
