@@ -1,3 +1,5 @@
+package algos.Algos_and_ds.miscellaneous;
+
 import java.util.*;
 
 public class SherlockandBeast {
