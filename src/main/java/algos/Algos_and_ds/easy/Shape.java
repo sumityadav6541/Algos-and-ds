@@ -24,14 +24,32 @@ public class Shape {
 		return false;
 
 	}
-
-	public static int getDistanceSquare(int x1, int y1, int x2, int y2) {
-		return (x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2);
+	
+	/* int[] rec1 = {x1 , y1, x2 , y2}
+	 * */
+	public static boolean isRectangleOverlaps(int[] rec1, int[] rec2){
+		if(rec1[0]> rec2[2] || rec2[0] > rec1[2] )// x1 > x4 or x3 > x2
+			return false;
+		
+		else if(rec1[3]> rec2[1] || rec2[3] > rec1[1] )// y2 > y3 or y4 > y1
+			return false;
+		
+		return true;
 	}
 
+	private static int getDistanceSquare(int x1, int y1, int x2, int y2) {
+		return (x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2);
+	}
+	
+	//TODO: write unit tests for the above methods
 	public static void main(String[] args) {
+		// test cases for isSquare
 		System.out.println(isSquare(0, 0, 0, 10, 10, 10, 10, 0)); // it should be a square
 		System.out.println(isSquare(20, 20, 20, 10, 10, 20, 10, 10)); // it should be a square
 		System.out.println(isSquare(10, 10, 10, 10, 20, 10, 20, 30)); // not a square
+
+		// test cases for isRectangleOverlaps
+		System.out.println(isRectangleOverlaps(new int[] {0,10,10,0}, new int[] {5,5,15,0})); // overlaps
+		System.out.println(isRectangleOverlaps(new int[] {0,2,1,1}, new int[] {-2,-3,0,2}));  // do not overlaps
 	}
 }
