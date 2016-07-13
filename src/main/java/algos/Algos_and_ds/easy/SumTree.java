@@ -15,7 +15,8 @@ public class SumTree {
 		System.out.println(isSumTree(root));
 		System.out.println(isSumTreeFaster(root));
 	}
-
+	
+	// running time complexity of this algorithm is O(n)
 	private static boolean isSumTreeFaster(TreeNode root) {
 		if (root == null || isLeaf(root))
 			return true;
