@@ -46,7 +46,7 @@ public class BST {
 		inOrderTraversal(sortedArray2BST(b));
 	}
 
-	private static void inOrderTraversal(TreeNode root) {
+	public static void inOrderTraversal(TreeNode root) {
 		if (root == null)
 			return;
 		inOrderTraversal(root.left);
