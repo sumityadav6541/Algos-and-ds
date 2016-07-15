@@ -20,7 +20,7 @@ public class SetBits {
 		return (int) (sum + (n-1)*Math.pow(2, n-2));
 	}
 
-	private static int getTotalBits(int i) {
+	public static int getTotalBits(int i) {
 		int count = 0;
 
 		while (i > 0) {
