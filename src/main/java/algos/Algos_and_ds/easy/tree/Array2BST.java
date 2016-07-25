@@ -1,4 +1,4 @@
-package algos.Algos_and_ds.easy;
+package algos.Algos_and_ds.easy.tree;
 
 import algos.Algos_and_ds.commons.BST;
 
