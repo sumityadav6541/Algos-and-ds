@@ -20,8 +20,12 @@ public class ProblemGenerator {
 		Elements tables = doc.getElementsByClass("col-sm-7").first().getElementsByTag("table");
 		ArrayList<String> quesList = new ArrayList<String>();
 		ArrayList<String> quesComplete = new ArrayList<String>();
-
-		quesComplete.add("Lowest Common Ancestor in a BST");
+		// add complete questions in this list
+			quesComplete.add("Lowest Common Ancestor in a BST");
+			quesComplete.add("Square root");
+			quesComplete.add("Print all nodes that don’t have sibling");
+			quesComplete.add("Root to leaf path sum");
+		//
 		for (Element table : tables) {
 			Elements links = table.getElementsByTag("strong");
 			for (Element e : links) {
