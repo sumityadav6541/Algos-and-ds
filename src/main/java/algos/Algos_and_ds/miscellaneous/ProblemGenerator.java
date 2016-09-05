@@ -25,6 +25,7 @@ public class ProblemGenerator {
 			quesComplete.add("Square root");
 			quesComplete.add("Print all nodes that don’t have sibling");
 			quesComplete.add("Root to leaf path sum");
+			quesComplete.add("Array to BST");
 		//
 		for (Element table : tables) {
 			Elements links = table.getElementsByTag("strong");
